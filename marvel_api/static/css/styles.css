@@ -1,0 +1,144 @@
+.marvel-nav{
+    display: flex;
+    justify-content: space-between;
+}
+
+.marvel-nav img{
+    width: 30%;
+    max-width: 100%;
+    margin-left: 2vw;
+}
+
+ul#horizontal-list{
+    min-width: 696px;
+    list-style: none;
+    padding-top: 50px;
+}
+
+ul#horizontal-list li, ul#horizontal-list a{
+    display: inline;
+    text-decoration: none;
+    padding: 0.5vw;
+    color: black;
+}
+
+ul#horizontal-list a:nth-last-child(1){
+    border: 2px solid #bfffec;
+    border-radius: 11px;
+    margin-right: 0.2vw;
+    background-color: #bfbaff;
+}
+
+#header-text{
+    padding: 2vw;
+}
+
+.header-image{
+    width: 82%;
+    max-width: 100%;
+}
+
+#middle-text{
+    text-align: center;
+    padding: 13vh;
+}
+
+#middle-text h2{
+    padding: 1.5vw;
+}
+
+#choices-image, #superwoman-image, #savings-image{
+    margin-bottom: 10vh;
+    width: 70%;
+    max-width: 100%;
+}
+
+#features-section{
+    margin: 8vw;
+}
+
+#social-media-image{
+    width: 50%;
+    max-width: 75%;
+    margin-left: 3vw;
+}
+
+.social-text{
+    padding-top: 5vh;
+}
+
+.btn1, .btn4{
+    border: 2px solid #bfffec;
+    border-radius: 11px;
+    background-color: #bfbaff;
+}
+
+.btn2, .btn3{
+    border: 2px solid #bfbaff;
+    border-radius: 11px;
+    background-color: #a7f8e0 ;
+    color: rgb(255, 255, 255);
+}
+
+#footer-logo{
+    width: 100%;
+    max-width: 100%;
+}
+
+.footer-text-flex{
+    display: flex;
+    flex-direction: column;
+    margin-top: 3vw;
+    text-align: center;
+}
+
+#footer{
+    border-top: 3px solid black;
+    margin-top: 20vh;
+}
+
+.btn5{
+    border: 2px solid #ffd3b6;
+    border-radius: 11px;
+    background-color: #bfbaff ;
+    color: rgb(255, 255, 255);
+}
+
+.btn6{
+    border: 2px solid #ffd3b6;
+    border-radius: 11px;
+    background-color: #a7f8e0;
+    color: rgb(255, 255, 255);
+}
+
+.hero-section{
+    height: 60vh;
+    background-image: url(../images/marvelchar.jpeg);
+    background-size: cover;
+    background-position: 100% 100%;
+    position: relative;
+    opacity: 0.75;
+
+}
+
+
+.header-text{
+    display: flex;
+    justify-content: center;
+    left: 20rem;
+    top: 10rem;
+    color: black;
+    font-size: 60px;
+    font-weight: bold;
+    font-family: cursive;
+    border: black;
+}
+
+.details-text{
+    font-size: larger;
+    font-weight: bold;
+    font-family: cursive;
+    border-top: 2px solid black;
+    margin-top: 30px;
+    padding-top: 20px;
+}

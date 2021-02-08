@@ -1,0 +1,22 @@
+{% extends 'shared/base.html' %}
+
+{% block content %}
+
+<header class="hero-section">
+</header>
+<h3 class="header-text">Welcome {{ current_user.email }}</h3>
+
+<div class="container details-text">
+    <h3>Your Profile Details:</h3>
+    <ul class="list-group">
+        <li class="list-group-item">Email: {{ current_user.email }}</li>
+        <li class="list-group-item">Token: {{ current_user.token }}</li>
+        {% if jwt %}
+        <li class="list-group-item">API Access Key: <p>{{ jwt }}</p></li>
+        {% else %}
+        <li class="list-group-item">API Access Key: <p>None</p></li>
+        {% endif %}
+    </ul>
+</div>
+
+{% endblock content %}

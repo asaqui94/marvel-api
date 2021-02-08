@@ -1,0 +1,105 @@
+{% extends 'shared/base.html' %}
+
+{% block content %}
+
+<div class="container">
+    {% with messages = get_flashed_messages(with_categories = true) %}
+        {% if messages %}
+            {% for cat,msg in messages %}
+                {% if cat == 'auth-success'%}
+                    <div class="alert alert-success">
+                        {{ msg }}
+                        <button type="button" class="close" data-dismiss = "alert">&times;</button>
+                    </div>
+                {% endif %}
+            {% endfor %}
+        {% endif %}
+    {% endwith %}
+</div>
+
+<div class="container">
+    <!--Header Section-->
+    <header class="row">
+    <div class="col-12 col-md-6">
+        <img class="header-image" src="../static/images/superhero.svg" alt="Superhero">
+    </div>
+    <div class="col-12 col-md-6" id="header-text">
+        <h2>Build the future of your Marvel collection here!</h2>
+        <h5>Create an amazing API tool for your Marvel characters.</h5>
+        <button class="btn btn-primary btn1">View Our Docs</button>
+        <button class="btn btn-primary btn2">Live Chat</button>
+    </div>
+    </header>
+
+    <!--Middle Section-->
+    <section class="row">
+        <div class="col-12" id="middle-text">
+            <h2>Display Your Collection</h2>
+            <p>You can harness the power of an API to expand your collection</p>
+        </div>
+    </section>
+
+    <!--Collections-->
+    <section class="row" id="features-section">
+        <div class="col-12 col-md-4">
+            <img src="../static/images/choices.svg" alt="Choices" id="choices-image">
+            <h4>Your Choices Matter</h4>
+            <p>You have many choices. You can customize your own settings or choose from our easy to use pre-customized features.</p>
+        </div>
+
+        <div class="col-12 col-md-4">
+            <img src="../static/images/superwoman.svg" alt="Superwoman" id="superwoman-image">
+            <h4>Super Power-ful</h4>
+            <p>We offer the best data and resources for your personal and professional uses.</p>
+        </div>
+
+        <div class="col-12 col-md-4">
+            <img src="../static/images/savings.svg" alt="Savings" id="savings-image">
+            <h4>Save Money</h4>
+            <p>Get all of the benefits at only a fraction of the price! Check out our pricing offers.</p>
+        </div>
+    </section>
+
+    <!--Social Media-->
+    <section class="row">
+        <div class="col-12 col-md-6">
+            <img src="../static/images/Social_Media.jpeg" alt="Social Media" id="social-media-image">
+        </div>
+        
+        <div class="col-12 col-md-6 social-text">
+            <h4>Easy To Share</h4>
+            <p>Showcase your collection on any major social media platform easily. You can also join our Slack channel and Github to collaborate with other collectors.</p>
+            <button class="btn btn-primary btn3">Github</button>
+            <button class="btn btn-primary btn4">Slack</button>
+        </div>
+    </section>
+
+    <!--Footer-->
+    <footer class="row" id="footer">
+        <div class="col-3 col-md-4">
+            <img src="../static/images/marvel-logo.png" alt="Marvel Logo" id="footer-logo">
+        </div>
+
+        <div class="col-3 col-md-4">
+            <div class="footer-text-flex">
+                <h4>Platform</h4>
+                <p>Why Marvel?</p>
+                <p>Characters</p>
+                <p>Spread The Word</p>
+                <p>Donate Here</p>
+            </div>
+        </div>
+
+        <div class="col-3 col-md-4">
+            <div class="footer-text-flex">
+                <h4>Check Us Out</h4>
+                <p>Our Sponsors</p>
+                <p>Follow Us</p>
+                <p>Featured In</p>
+                <p>Learn More</p>
+            </div>
+        </div>
+    </footer>
+</div>
+
+{% endblock content %}
